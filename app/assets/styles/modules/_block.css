@@ -1,0 +1,12 @@
+.block{
+
+&__element-title{
+    background-color: $gray-400;
+    text-transform: uppercase;
+}
+
+&__element-subtitle{
+    background-color: $gray-300;
+}
+
+}
