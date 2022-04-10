@@ -1,7 +1,16 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: auto;
+}
+
+
 body {
     background-color: $gray-700;
 }
 
-.float-right {
-    float: right;
-}
+    img {
+        max-width: 100%;
+        height: auto;
+    }

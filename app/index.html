@@ -7,27 +7,64 @@
     <title>Szkoła Podstawowa w Mysłakowicach</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Starter Page</h1>
-      <h2>BEM</h2>
-
-      <div class="block">
-        <div class="container container--block">
-          <h2 class="block__element-title">.block__element-title</h2>
-          <h3 class="block__element-subtitle">.block__element-subtitle</h3>
-          <p>
-            This is a generic paragraph. This is a generic paragraph. This is a
-            generic paragraph. This is a generic paragraph.
-          </p>
-          <p>
-            This is a generic paragraph. This is a generic paragraph. This is a
-            generic paragraph.
-          </p>
-          <a class="btn btn--block" href="#">.btn .btn--orange</a>
-          <a class="btn btn--orange btn--large" href="#">.btn .btn--blue</a>
+    <section class="css-structure">
+      <div class="container">
+        <h1>Starter Page</h1>
+        <h2>CSS Structure</h2>
+        <div class="block">
+          <div class="container container--block">
+            <h2 class="block__element-title">.block__element-title</h2>
+            <h3 class="block__element-subtitle">.block__element-subtitle</h3>
+            <p>
+              This is a generic paragraph. This is a generic paragraph. This is
+              a generic paragraph. This is a generic paragraph.
+            </p>
+            <p>
+              This is a generic paragraph. This is a generic paragraph. This is
+              a generic paragraph.
+            </p>
+            <a class="btn btn--block" href="#">.btn .btn--orange</a>
+            <a class="btn btn--orange btn--large" href="#">.btn .btn--blue</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="responsive-images">
+      <div class="container">
+        <h2>
+          Responsive Images - Art direction / cropping situation (picture
+          element)
+        </h2>
+        <picture>
+          <source
+            srcset="assets/images/dog-crop-large.jpg"
+            media="(min-width: 936px)"
+          />
+          <source
+            srcset="assets/images/dog-crop-medium.jpg"
+            media="(min-width: 532px)"
+          />
+          <img
+            src="assets/images/dog-crop-small.jpg"
+            alt="art-situation-images"
+          />
+        </picture>
+
+        <h2>
+          Responsive Images - Image resolution & file size situation (faster
+          load times)
+        </h2>
+        <img
+          srcset="
+            assets/images/dog-resolution-small.jpg   570w,
+            assets/images/dog-resolution-medium.jpg 1200w,
+            assets/images/dog-resolution-large.jpg  1920w
+          "
+          alt="resolution-situation images"
+        />
+      </div>
+    </section>
 
     <script src="bundled.js"></script>
   </body>
