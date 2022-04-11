@@ -2,11 +2,13 @@
     max-width: 1200px;
     background-color: $gray-600;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
 
     
     .container--block{
     border: 2px rgba(185, 62, 62, 0.5) solid;
     background-color: $gray-500;
     }
+
 }

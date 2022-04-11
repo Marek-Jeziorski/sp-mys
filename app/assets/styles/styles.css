@@ -2,6 +2,8 @@
 @import 'base/_variables.css';
 @import 'base/_global.css';
 @import 'base/_mixins.css';
+@import 'modules/_page-section.css';
 @import 'modules/_container.css';
+@import 'modules/_btn.css';
+@import 'modules/_headline.css';
 @import 'modules/_block.css';
-@import 'modules/_btn.css'

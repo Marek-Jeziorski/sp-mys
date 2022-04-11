@@ -1,0 +1,8 @@
+.page-section{
+    border: 5px solid $yellow;
+
+&--b-green{
+    border: 5px solid $orange;
+}
+
+}
