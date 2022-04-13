@@ -1,4 +1,6 @@
 .block{
+    border: 2px rgba(185, 62, 62, 0.5) solid;
+    background-color: $gray-500;
 
 &__element-title{
     background-color: $gray-400;

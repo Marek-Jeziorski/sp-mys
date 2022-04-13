@@ -1,8 +1,13 @@
 .page-section{
-    border: 5px solid $yellow;
 
+&--b-yellow{
+    border: 5px solid $yellow;
+}
 &--b-green{
     border: 5px solid $orange;
+}
+&--b-blue {
+    border: 5px solid $blue;
 }
 
 }

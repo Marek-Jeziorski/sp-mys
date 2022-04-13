@@ -7,64 +7,161 @@
     <title>Szkoła Podstawowa w Mysłakowicach</title>
   </head>
   <body>
-    <section class="page-section">
+    <section class="page-section page-section--b-blue">
+      <div class="flex-row container">
+        <picture>
+          <source
+            sizes="404px"
+            srcset="
+              assets\images\pink-jumper\our-start-i.jpg    404w,
+              assets\images\pink-jumper\our-start-i@2x.jpg 808w
+            "
+            media="(min-width: 900px)"
+          />
+
+          <source
+            sizes="320px"
+            srcset="
+              assets\images\pink-jumper\our-start-portrait-i.jpg    382w,
+              assets\images\pink-jumper\our-start-portrait-i@2x.jpg 764w
+            "
+            media="(min-width: 800px)"
+          />
+
+          <img
+            srcset="
+              assets\images\pink-jumper\our-start-landscape-i@x.jpg   565w,
+              assets\images\pink-jumper\our-start-landscape-i.jpg     800w,
+              assets\images\pink-jumper\our-start-landscape-i@2x.jpg 1600w
+            "
+            alt="pink jumper girl"
+          />
+        </picture>
+
+        <div class="flex-row__col--8">
+          <div class="generic-content-container">
+            <h2 class="headline headline--dark headline--no-t-margin">
+              This is our begining.
+            </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              suscipit facere ut excepturi,<a href="#"> ducimus obcaecati </a> ,
+              consequatur cum <strong> necessitatibus dicta</strong> ipsa
+              praesentium asperiores, nesciunt hic accusamus consectetur
+              corporis magni optio veritatis quidem quam. Neque illo voluptas
+              laboriosam harum eveniet libero vero incidunt, suscipit omnis sit
+              provident exercitationem esse alias at iusto delectus voluptates?
+              Officia non et nam consequatur? Velit, quia! Laudantium!
+            </p>
+            <p>
+              Eaque, similique exercitationem optio velit pariatur molestiae
+              sint ex adipisci aliquid, aliquam animi inventore? Repudiandae
+              consequatur quis tempore temporibus accusantium doloremque aliquid
+              minima eaque veritatis, iste hic mollitia aperiam. Eum, et
+              excepturi? Dolorum quidem nostrum culpa sed rem quis! Dolorem,
+              voluptatibus excepturi maiores minima odit ab esse laborum?
+              Corrupti fugit temporibus adipisci explicabo officia placeat
+              voluptatum vel nesciunt illum iure!
+            </p>
+            <p>
+              Sunt, voluptates eos, provident consectetur aliquam numquam
+              adipisci quo id quis ipsam, culpa libero quidem. Quos voluptas
+              excepturi autem distinctio eum, nostrum numquam? Saepe, dolorem
+              iste veniam, libero ipsum quae voluptates beatae maiores
+              temporibus accusamus ut ad ex obcaecati labore, voluptatem quidem!
+              Accusamus nisi quasi libero doloribus, illum eum dignissimos iure
+              similique, non saepe sint dolorem beatae laborum soluta ut?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container--inline-center container--b-margin">
+        <img
+          sizes="(min-width: 970px) 976px, 100vw"
+          class="img--inline-block"
+          srcset="
+            assets\images\first-trip\first-trip-i@x.jpg   565w,
+            assets\images\first-trip\first-trip-i.jpg     976w,
+            assets\images\first-trip\first-trip-i@2x.jpg 1952w
+          "
+          alt="couple walking down a street"
+        />
+      </div>
+    </section>
+
+    <section class="page-section page-section--b-yellow">
       <div class="container">
-        <h1 class="headline headline--center">Starter Page</h1>
+        <h1 class="headline headline--center headline--b-margin-small">
+          Starter Page
+        </h1>
+        <h3
+          class="headline headline--center headline--narrow headline--light headline--no-t-margin"
+        >
+          This is <strong> a leading text to page</strong>. Which shouldn't has
+          a width wider than 500px
+        </h3>
         <h2 class="headline">CSS Structure</h2>
-        <div class="block">
-          <div class="container container--block">
-            <h2 class="block__element-title">.block__element-title</h2>
-            <h3 class="block__element-subtitle">.block__element-subtitle</h3>
-            <p>
-              This is a generic paragraph. This is a generic paragraph. This is
-              a generic paragraph. This is a generic paragraph.
-            </p>
-            <p>
-              This is a generic paragraph. This is a generic paragraph. This is
-              a generic paragraph.
-            </p>
+        <div class="block container container--narrow">
+          <h2 class="block__element-title">.block__element-title</h2>
+          <h3 class="block__element-subtitle">.block__element-subtitle</h3>
+          <p>
+            This is a generic paragraph. This is a generic paragraph. This is a
+            generic paragraph. This is a generic paragraph.
+          </p>
+          <p>
+            This is a generic paragraph. This is a generic paragraph. This is a
+            generic paragraph.
+          </p>
+          <div class="btn-bar">
             <a class="btn btn--block" href="#">.btn .btn--orange</a>
-            <a class="btn btn--orange btn--large" href="#">.btn .btn--blue</a>
+            <a class="btn btn--orange btn--large float-right" href="#"
+              >.btn .btn--blue</a
+            >
           </div>
         </div>
       </div>
     </section>
 
     <section class="page-section page-section--b-green">
-      <div class="container">
+      <div class="container container--narrow">
         <h2 class="headline">
           Responsive Images - Art direction / cropping situation (picture
           element)
         </h2>
         <picture>
           <source
-            srcset="assets/images/dog-crop-large.jpg"
+            srcset="assets/images/dogs/dog-crop-large.jpg"
             media="(min-width: 936px)"
           />
           <source
-            srcset="assets/images/dog-crop-medium.jpg"
+            srcset="assets/images/dogs/dog-crop-medium.jpg"
             media="(min-width: 532px)"
           />
           <img
-            src="assets/images/dog-crop-small.jpg"
+            src="assets/images/dogs/dog-crop-small.jpg"
             alt="art-situation-images"
           />
         </picture>
-
+      </div>
+      <div class="container container--medium">
         <h2 class="headline">
           Responsive Images - Image resolution & file size situation (faster
           load times)
         </h2>
         <img
           srcset="
-            assets/images/dog-resolution-small.jpg   570w,
-            assets/images/dog-resolution-medium.jpg 1200w,
-            assets/images/dog-resolution-large.jpg  1920w
+            assets/images/dogs/dog-resolution-small.jpg   570w,
+            assets/images/dogs/dog-resolution-medium.jpg 1200w,
+            assets/images/dogs/dog-resolution-large.jpg  1920w
           "
           alt="resolution-situation images"
         />
-
-        <h2 class="headline">Responsive Images - Mix situation</h2>
+      </div>
+      <div class="large-hero container">
+        <h2 class="headline">
+          Responsive Images - Mix situation with Centering Text
+        </h2>
         <picture>
           <source
             srcset="
@@ -94,6 +191,16 @@
             "
           />
         </picture>
+
+        <div class="large-hero__text-container">
+          <h1>This is the Center</h1>
+          <h2>Can you see? Do you understand?</h2>
+          <p>
+            I am just making my future here. I return here one day and I say:
+            Wow what a progress i did !!!
+          </p>
+          <p><a class="btn" href="#">Get Started Today</a></p>
+        </div>
       </div>
     </section>
 

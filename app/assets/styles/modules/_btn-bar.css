@@ -1,0 +1,13 @@
+.btn-bar {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px  50px;
+
+@mixin atSmall {
+    flex-flow: row;
+    justify-content: center;
+   
+}
+
+}
