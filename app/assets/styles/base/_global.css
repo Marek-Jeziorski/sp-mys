@@ -13,7 +13,7 @@ body {
 
 img {
      /* TODO: display block to get rid of bottom space for yg letters ?? */
-     display: block;
+ 
      max-width: 100%;
      height: auto;
     }

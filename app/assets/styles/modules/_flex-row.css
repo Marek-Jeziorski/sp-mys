@@ -7,9 +7,18 @@
     @mixin atMedium {
         flex-flow: row;
     }
+
+    &--big-x-gutter{
+        gap: 2rem 2.5rem ;
+    }
  
 &__col {
     background-color: $gray-400;
+
+
+    &--6 {
+        flex: 6;
+    }
 
     &--8{
     flex: 8;

@@ -12,3 +12,5 @@
 @import 'modules/_generic-content-container';
 @import 'modules/_block';
 @import 'modules/_large-hero';
+@import 'modules/_section-title';
+@import 'modules/_feature-item';
