@@ -1,0 +1,14 @@
+.section-title{
+    color: $gray-100;
+    font-size: 3.75rem;
+    font-weight: 300;
+    text-align: center;
+
+&__icon{
+    margin-right: .5rem;
+}
+
+    strong {
+        font-weight: 700 ;
+    }
+}
