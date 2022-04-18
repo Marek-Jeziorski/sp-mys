@@ -1,0 +1,33 @@
+.feature-item{
+
+    @mixin atLarge {
+        position: relative;
+        padding-left: 94px;
+        padding-bottom: 1rem;
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+       
+        @mixin atLarge {
+        position: absolute;
+        left: 0;
+        }    
+    }
+
+    &__title{
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: .7em;
+        margin-bottom: .8rem;
+        background-color: red;
+        text-align: center;
+
+        @mixin atLarge{
+        text-align: left;
+        font-size: 1.875rem;
+        }
+    
+    }
+}

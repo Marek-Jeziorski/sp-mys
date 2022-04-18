@@ -3,11 +3,15 @@
 &--b-yellow{
     border: 5px solid $yellow;
 }
-&--b-green{
+&--b-orange{
     border: 5px solid $orange;
 }
 &--b-blue {
     border: 5px solid $blue;
+}
+
+&--b-green {
+    border: 5px solid $green;
 }
 
 }
