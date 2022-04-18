@@ -8,20 +8,57 @@
         flex-flow: row;
     }
 
-    &--big-x-gutter{
-        gap: 2rem 2.5rem ;
-    }
- 
-&__col {
-    background-color: $gray-400;
-
-
-    &--6 {
-        flex: 6;
-    }
-
-    &--8{
-    flex: 8;
-    }
+&--many-items{
+    background-color: red;
+    gap: 0;
+    justify-content: space-evenly;
 }
+
+    &--big-x-gutter{
+        gap: 3rem 1rem ;
+    }
+    
+    &__col {
+        background-color: $gray-400;
+    
+        &--aside-picture-width-col {
+            flex: 1;
+        }
+
+        &--a-2col {
+            flex: 6;
+            
+            @mixin atLarge{
+                flex: 4;
+            }
+        }
+
+        &--b-2col {
+            flex: 6;
+            @mixin atLarge {
+                 flex: 8;
+            }
+        }
+
+        &--a-3col{
+            flex: 4;
+            @mixin atLarge {
+                 flex: 6;
+            }
+        }
+
+        &--b-3col {
+            flex: 4;
+            @mixin atLarge {
+                 flex: 3;
+            }
+        }
+
+        &--c-3col {
+            flex: 4;
+             @mixin atLarge {
+                 flex: 3;
+             }
+        }
+    }
 }
