@@ -8,40 +8,6 @@
         sans-serif;
     font-weight: 300;
 
-&--dark {
-    color: $gray-900;   
-}
-
-&--no-t-margin{
-    margin-top: 0;
-}
-
-&--center{
-    text-align: center;
-}
-
-&--narrow {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.8rem;
-}
-
-&--light {
-    font-weight: 100;
-}
-
-&--b-margin-small {
-    margin-bottom: .2em;
-}
-
-&--b-margin-big {
-    margin-bottom: 1.5em;
-}
-
-&--no-t-margin {
-    margin-top: 0;
-}
 
 strong {
     font-weight: 600;
