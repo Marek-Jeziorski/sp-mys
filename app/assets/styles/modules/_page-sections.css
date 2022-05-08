@@ -1,0 +1,25 @@
+.section{
+    margin-bottom: 1rem;
+
+
+&--footer {
+    margin-bottom: 0;
+}
+
+&--indigo {
+    border: 5px solid indigo;
+}
+&--yellow{
+    border: 5px solid yellow;
+}
+&--orange{
+    border: 5px solid orange;
+}
+&--blue {
+    border: 5px solid blue;
+}
+&--green {
+    border: 5px solid green;
+}
+
+}

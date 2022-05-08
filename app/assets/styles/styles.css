@@ -1,7 +1,12 @@
 @import 'normalize.css';
+
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
-@import 'modules/_page-section';
+
+@import 'modules/_page-sections';
 @import 'modules/_container';
+@import 'modules/_header';
+@import 'modules/_hero';
+
 @import 'modules/_generic-content';

@@ -7,23 +7,80 @@
     <title>Szkoła Podstawowa w Mysłakowicach</title>
   </head>
   <body>
-    <section class="page-section page-section--b-yellow">
-      <div class="container">
-        <h1>CONTENT</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          molestiae error enim cum omnis deleniti quos non quas, asperiores
-          ipsam? Iusto enim quasi ex consectetur, qui mollitia soluta,
-          temporibus, vel reiciendis delectus sunt quisquam aut. Sequi animi
-          aperiam quidem! Enim nulla quaerat culpa sint id, esse, in accusamus
-          blanditiis, illo quas eaque aut quos totam recusandae impedit ut eos
-          libero placeat consectetur? Iste soluta quia facilis. Explicabo
-          voluptatem nisi exercitationem culpa sapiente asperiores eligendi
-          ipsum ex, in, eum atque qui magni omnis incidunt quo illo minima nemo
-        </p>
+    <header class="header section section--header section--indigo">
+      <nav class="header__navbar container">
+        <ul class="header__nav-list">
+          <li><a href="#">Strona Startowa</a></li>
+          <li><a href="#">Dla Rodzica i Ucznia</a></li>
+          <li><a href="#">O szkole</a></li>
+          <li><a href="#">Nasze Usługi</a></li>
+          <li><a href="#">Zajęcia dydaktyczne</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+        <div class="header__btn-bar">
+          <a class="btn" href="#">Login</a>
+          <a class="btn" href="#">Search</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero section section--orange">
+      <div class="container flex-cont">
+        <div class="hero__brand flex-col">
+          <h1>Szkoła Podstawowa</h1>
+          <h2>w Mysłakowicach</h2>
+        </div>
+        <div class="hero__image flex-col flex-col--fx1">
+          <picture>
+            <source
+              srcset="
+                assets/images/hero-images/hero--large-i.jpg        1920w,
+                assets/images/hero-images/hero--large-hi-dpi-i.jpg 3840w
+              "
+              media="(min-width: 1380px)"
+            />
+            <source
+              srcset="
+                assets/images/hero-images/hero--medium-i.jpg        1380w,
+                assets/images/hero-images/hero--medium-hi-dpi-i.jpg 2760w
+              "
+              media="(min-width: 990px)"
+            />
+            <source
+              srcset="
+                assets/images/hero-images/hero--small-i.jpg         990w,
+                assets/images/hero-images/hero--small-hi-dpi-i.jpg 1980w
+              "
+              media="(min-width: 640px)"
+            />
+            <img
+              srcset="
+                assets/images/hero-images/hero--smaller-i.jpg         640w,
+                assets/images/hero-images/hero--smaller-hi-dpi-i.jpg 1280w
+              "
+            />
+          </picture>
+        </div>
       </div>
     </section>
 
+    <section class="section section--yellow">
+      <div class="container">
+        <h1>MAIN</h1>
+      </div>
+    </section>
+
+    <section class="section section--blue">
+      <div class="container">
+        <h1>PROGRAMS</h1>
+      </div>
+    </section>
+
+    <footer class="section section--footer section--green">
+      <div class="container">
+        <h1>FOOTER</h1>
+      </div>
+    </footer>
     <script src="bundled.js"></script>
   </body>
 </html>
