@@ -10,25 +10,10 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        a {
-            display: inline-block;
-            background-color: #ddd;
-            padding: 5px 0;
-        }
+ 
     }
 
-    &__nav-list{
-        display: flex;
-        flex-flow: column;
-        list-style: none;
-        column-gap: 32px;
-        row-gap: 32px;
 
-        @mixin atMedium {
-            flex-flow: row wrap;
-        }
-    }
 
     &__btn-bar {
         display: flex;

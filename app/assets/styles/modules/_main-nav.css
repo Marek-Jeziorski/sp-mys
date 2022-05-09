@@ -1,0 +1,21 @@
+.main-nav {
+    background-color: #eee;
+        
+        ul {
+            display: flex;
+            flex-flow: column;
+            list-style: none;
+            column-gap: 32px;
+            
+            @mixin atMedium {
+                flex-flow: row wrap;
+            }
+        }
+
+        a {
+            display: block;
+            background-color: #ddd;
+            padding: 12px 0;
+            font-weight: 300;
+        }
+}
