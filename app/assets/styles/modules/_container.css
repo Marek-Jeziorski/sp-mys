@@ -1,13 +1,9 @@
-.container{
+.container {
     max-width: 1320px;
     background-color: #eee;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
-
-    &--inline-center {
-        text-align: center;
-    }
 
     .container {
         padding-left: 0;

@@ -4,11 +4,14 @@
         ul {
             display: flex;
             flex-flow: column;
+   
             list-style: none;
-            column-gap: 32px;
+          
             
             @mixin atMedium {
                 flex-flow: row wrap;
+                column-gap: 16px;
+                row-gap: 16px;
             }
         }
 

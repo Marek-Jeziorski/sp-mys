@@ -1,14 +1,28 @@
 .hero {
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 16px;
+
+        @mixin atLarge {
+            flex-direction: row;
+        }
+    }
+
+    &__col-picture {   
+        flex: 1;
+
+        img {
+            display: block;
+        }
+    }
 
     &__brand {
         text-align: center;
         padding-inline: 16px ;
     }
 
-    &__image {
-        img {
-            display: block;
-        }
-    }
+    
  
 }

@@ -1,23 +1,15 @@
 .header {
 
-    &__navbar {
+    &__flex {
         display: flex;
         flex-flow: column nowrap;
-        row-gap: 32px;
+        row-gap: 16px;
 
         @mixin atMedium {
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
         }
- 
-    }
-
-    &__btn-bar {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 32px;
     }
 
     
