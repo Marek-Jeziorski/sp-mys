@@ -1,20 +1,24 @@
+/* RESET */
 @import 'normalize.css';
 
+/* BASE */
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
 
-
+/*TOOLS */
 @import 'modules/_blocks';
-@import 'modules/_page-sections';
+
+/* BLOCKS */
 @import 'modules/_container';
 @import 'modules/_btn-bar';
 @import 'modules/_btn';
-
-
-@import 'modules/_header';
 @import 'modules/_main-nav';
-@import 'modules/_hero';
-
-
 @import 'modules/_generic-content';
+
+/* PAGE SECTIONS */
+@import 'modules/page-sections/_page-sections';
+@import 'modules/page-sections/_header';
+@import 'modules/page-sections/_hero';
+@import 'modules/page-sections/_main';
+@import 'modules/page-sections/_programs';

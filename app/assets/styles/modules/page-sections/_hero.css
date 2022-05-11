@@ -10,6 +10,13 @@
         }
     }
 
+    &__col-brand {
+    
+        @mixin atXXLarge {
+            flex-basis: 32%;
+        }
+    }
+
     &__col-picture {   
         flex: 1;
 
