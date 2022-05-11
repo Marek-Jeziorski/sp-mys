@@ -1,10 +1,24 @@
 .programs {
 
     &__grid {
-     
- 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        justify-items: center;
+        align-items: center;
+
+        @mixin atLarge {
+            grid-template-columns: 1fr 1fr 1fr 1fr
+        }
 
 
+        & > :last-child{
+            grid-column: span 2;
+
+            @mixin atLarge {
+                grid-column: 2 / span 2;
+            }            
+        }
     }
 
 
