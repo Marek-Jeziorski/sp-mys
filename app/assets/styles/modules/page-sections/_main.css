@@ -25,7 +25,7 @@
     }
 
     &__area {
-        min-height: 20vh;
+        min-height: 5vh;
         text-align: center;
 
         &--sidebar {
