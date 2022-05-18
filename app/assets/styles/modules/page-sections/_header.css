@@ -1,37 +1,38 @@
 .header {
-    
-    &__nav-icon {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 20px;
-        height: 20px;
-        background-color: #fff;
-    
-        @mixin atMedium {
-            display: none;
-        }
+  &__nav-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &__navbar {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
     }
 
-    &__navbar{
-        display: none;
-        
-        @mixin atMedium {
-            display: block;
-        }
+    &--is-visible {
+      display: block;
     }
+  }
 
-    &__flex {
-        display: flex;
-        flex-flow: column nowrap;
-        row-gap: 16px;
+  &__flex {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 16px;
 
-        @mixin atMedium {
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
+    @mixin atMedium {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
     }
-
-    
+  }
 }
