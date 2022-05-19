@@ -6,6 +6,7 @@
     padding: 12px;
 
     @mixin atLarge {
+      padding: 0px;
       flex-flow: row wrap;
       column-gap: 16px;
       row-gap: 16px;
@@ -14,6 +15,9 @@
 
   li {
     margin-bottom: 16px;
+    @mixin atLarge {
+      margin-bottom: 0;
+    }
   }
 
   a {
@@ -23,8 +27,8 @@
     padding: 12px 0 12px 12px;
     background-color: rgba(0, 0, 255, 0.507);
 
-    @mixin atMedium {
-      background-color: transparent;
+    @mixin atLarge {
+      padding: 12px 0;
     }
   }
 }
