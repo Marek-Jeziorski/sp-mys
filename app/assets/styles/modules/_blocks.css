@@ -1,25 +1,24 @@
-.block{
+.block {
+  &--red {
+    border: 8px solid red;
+  }
 
-
-&--red {
-    border: 8px solid red;  
-}
-
-&--green {
+  &--green {
     border: 8px solid green;
-}
+  }
 
-&--blue {
+  &--blue {
     border: 8px solid blue;
-}
+  }
 
-&--yellow{
+  &--yellow {
     border: 8px solid yellow;
-}
-&--orange{
+  }
+  &--orange {
     border: 8px solid orange;
-}
+  }
 
-
-
+  &--lime {
+    border: 8px solid limegreen;
+  }
 }

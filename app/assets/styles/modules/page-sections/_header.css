@@ -1,4 +1,13 @@
 .header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba(0, 0, 255, 0.507);
+  }
+
   &__nav-icon {
     position: absolute;
     top: 10px;
@@ -6,21 +15,29 @@
     width: 20px;
     height: 20px;
     background-color: #fff;
-
-    @mixin atMedium {
+    z-index: 10;
+    @mixin atLarge {
       display: none;
     }
   }
 
   &__navbar {
-    display: none;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: -10;
 
-    @mixin atMedium {
-      display: block;
+    @mixin atLarge {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
     }
 
     &--is-visible {
-      display: block;
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
     }
   }
 
@@ -29,7 +46,7 @@
     flex-flow: column nowrap;
     row-gap: 16px;
 
-    @mixin atMedium {
+    @mixin atLarge {
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;

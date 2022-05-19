@@ -1,24 +1,30 @@
 .main-nav {
-    background-color: #eee;
-        
-        ul {
-            display: flex;
-            flex-flow: column;
-   
-            list-style: none;
-          
-            
-            @mixin atMedium {
-                flex-flow: row wrap;
-                column-gap: 16px;
-                row-gap: 16px;
-            }
-        }
+  ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    padding: 12px;
 
-        a {
-            display: block;
-            background-color: #ddd;
-            padding: 12px 0;
-            font-weight: 300;
-        }
+    @mixin atLarge {
+      flex-flow: row wrap;
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+
+  li {
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: white;
+    display: block;
+    font-weight: 300;
+    padding: 12px 0 12px 12px;
+    background-color: rgba(0, 0, 255, 0.507);
+
+    @mixin atMedium {
+      background-color: transparent;
+    }
+  }
 }

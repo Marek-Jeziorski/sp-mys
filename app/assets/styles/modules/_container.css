@@ -1,15 +1,14 @@
 .container {
-    max-width: 1320px;
-    background-color: #eee;
-    margin: 0 auto;
+  max-width: 1320px;
+  margin: 0 auto;
 
-    @mixin atMedium {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  @mixin atMedium {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

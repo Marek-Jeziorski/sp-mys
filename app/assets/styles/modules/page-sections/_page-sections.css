@@ -1,9 +1,13 @@
-.section{
-    margin-bottom: 1rem;
+.section {
+  margin-bottom: 1rem;
 
+  &--hero {
+    @mixin atLarge {
+      padding-top: 77px;
+    }
+  }
 
-&--footer {
+  &--footer {
     margin-bottom: 0;
-}
-
+  }
 }
