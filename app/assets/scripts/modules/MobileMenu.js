@@ -13,6 +13,7 @@ class MobileMenu {
   toggleTheMenu() {
     this.navBar.classList.toggle('header__navbar--is-visible');
     this.header.classList.toggle('header--is-expanded');
+    this.navIcon.classList.toggle('header__nav-icon--close-x');
   }
 }
 
