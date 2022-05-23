@@ -8,6 +8,7 @@
 
 /*TOOLS */
 @import 'modules/_blocks';
+@import 'modules/_reveal-item';
 
 /* BLOCKS */
 @import 'modules/_container';
