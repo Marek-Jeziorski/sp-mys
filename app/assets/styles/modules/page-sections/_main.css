@@ -1,45 +1,40 @@
 .main {
-
-    &__grid {
+  &__grid {
     display: grid;
     column-gap: 16px;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'sidebar'
-        'articles'
-        'widgets';
+      'sidebar'
+      'articles'
+      'widgets';
 
     @mixin atLarge {
-        grid-template-columns: 2fr 3fr;
-        grid-template-areas:
+      grid-template-columns: 2fr 3fr;
+      grid-template-areas:
         'sidebar articles'
-        'widgets widgets'
+        'widgets widgets';
     }
 
     @mixin atXXLarge {
-        grid-template-columns: 2fr 3fr 1fr;
-        grid-template-areas:
-        'sidebar articles widgets'
+      grid-template-columns: 2fr 3fr 1fr;
+      grid-template-areas: 'sidebar articles widgets';
+    }
+  }
+
+  &__area {
+    min-height: 150vh;
+    text-align: center;
+
+    &--sidebar {
+      grid-area: sidebar;
     }
 
+    &--articles {
+      grid-area: articles;
     }
 
-    &__area {
-        min-height: 5vh;
-        text-align: center;
-
-        &--sidebar {
-            grid-area: sidebar;
-        }
-
-        &--articles {
-            grid-area: articles;
-        }
-
-        &--widgets {
-            grid-area: widgets;
-        }
-
+    &--widgets {
+      grid-area: widgets;
     }
-
+  }
 }

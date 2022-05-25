@@ -4,7 +4,8 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 
 let mobileMenu = new MobileMenu();
-let revealOnScroll = new RevealOnScroll();
+new RevealOnScroll(document.querySelectorAll('.programs__img'), 75);
+new RevealOnScroll(document.querySelectorAll('.footer__col'), 66);
 
 /* ---------------------------------------------------------------------------- */
 if (module.hot) {
