@@ -23,6 +23,7 @@
 
   &__area {
     min-height: 50vh;
+    /* TODO: remove min-height when you will add actuall content */
     text-align: center;
 
     &--sidebar {
