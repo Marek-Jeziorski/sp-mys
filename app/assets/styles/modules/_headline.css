@@ -1,16 +1,11 @@
 /* we can reset all headings h1,h2,h3 to the same size and then --modify it */
 
-.headline{
-    color: $gray-100;
-    font-family: Verdana,
-        Geneva,
-        Tahoma,
-        sans-serif;
-    font-weight: 300;
+.headline {
+  color: $gray-100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
 
-
-strong {
+  strong {
     font-weight: 600;
-
-}
+  }
 }
