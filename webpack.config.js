@@ -43,8 +43,13 @@ if (currentTask == 'build') {
   config.mode = 'production';
 
   config.output = {
-    filename: 'bundled.js',
+    filename: '[name].[chunkhash].js',
+    chunkFilename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'docs'),
+  };
+
+  config.optimization = {
+    splitChunks: { chunks: 'all' },
   };
 }
 
