@@ -78,6 +78,16 @@ if (currentTask == 'dev') {
 if (currentTask == 'build') {
   config.mode = 'production';
 
+  config.module.rules.push({
+    test: /\.js$/,
+    exclude: /(node_modules)/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env'],
+      },
+    },
+  });
   // [cssConfig.use] is an array so we can say dot unshift to add an item to the beginning of the array.
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
 
