@@ -9,6 +9,15 @@ const fse = require('fs-extra');
 // POST-CSS
 const postCSSPlugins = [require('postcss-import'), require('postcss-mixins'), require('postcss-simple-vars'), require('postcss-nested'), require('autoprefixer')];
 
+// OUR OWN PLUGIN (you can perform some task after compile)
+class RunAfterCompile {
+  apply(compiler) {
+    compiler.hooks.done.tap('Copy images', function () {
+      fse.copySync('./app/assets/images', './docs/assets/images ');
+    });
+  }
+}
+
 /* ---------------------------- COMMON FOR DEV/BUILD ----------------------- */
 
 // RULES FOR CSS
@@ -83,7 +92,13 @@ if (currentTask == 'build') {
     minimize: true,
     minimizer: ['...', new CssMinimizerPlugin()],
   };
-  config.plugins.push(new CleanWebpackPlugin(), new MiniCssExtractPlugin({ filename: 'styles.[chunkhash].css' }));
+  // Calling plugins
+  config.plugins.push(
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({ filename: 'styles.[chunkhash].css' }),
+    //  create our own Plugin for Webpack
+    new RunAfterCompile()
+  );
 }
 
 module.exports = config;
