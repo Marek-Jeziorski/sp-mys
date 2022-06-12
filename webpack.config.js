@@ -6,30 +6,30 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fse = require('fs-extra');
 
-// POST-CSS
-const postCSSPlugins = [require('postcss-import'), require('postcss-mixins'), require('postcss-simple-vars'), require('postcss-nested'), require('autoprefixer')];
+const postCSSPlugins = [
+  require('postcss-import'),
+  require('postcss-mixins'),
+  require('postcss-simple-vars'),
+  require('postcss-nested'),
+  // If in the future the creator of the postcss-hexrgba package
+  // releases an update (it is version 2.0.1 as I'm writing this)
+  // then it will likely work with PostCSS V8 so you can uncomment
+  // the line below and also install the package with npm.
+  //require('postcss-hexrgba'),
+  require('autoprefixer'),
+];
 
-// OUR OWN PLUGIN (you can perform some task after compile)
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap('Copy images', function () {
-      fse.copySync('./app/assets/images', './docs/assets/images ');
+      fse.copySync('./app/assets/images', './docs/assets/images');
     });
   }
 }
 
-/* ---------------------------- COMMON FOR DEV/BUILD ----------------------- */
-
-// RULES FOR CSS
 let cssConfig = {
   test: /\.css$/i,
-  use: [
-    'css-loader?url=false',
-    {
-      loader: 'postcss-loader',
-      options: { postcssOptions: { plugins: postCSSPlugins } },
-    },
-  ],
+  use: ['css-loader?url=false', { loader: 'postcss-loader', options: { postcssOptions: { plugins: postCSSPlugins } } }],
 };
 
 let pages = fse
@@ -38,10 +38,12 @@ let pages = fse
     return file.endsWith('.html');
   })
   .map(function (page) {
-    return new HtmlWebpackPlugin({ filename: page, template: `./app/${page}` });
+    return new HtmlWebpackPlugin({
+      filename: page,
+      template: `./app/${page}`,
+    });
   });
 
-// MAIN WEBPACK CONFIG (export)
 let config = {
   entry: './app/assets/scripts/App.js',
   plugins: pages,
@@ -50,19 +52,12 @@ let config = {
   },
 };
 
-/* ---------------------------- DEV TASK ---------------------------------- */
 if (currentTask == 'dev') {
-  config.mode = 'development';
-
-  // [cssConfig.use] is an array so we can say dot unshift to add an item to the beginning of the array.
   cssConfig.use.unshift('style-loader');
-
   config.output = {
     filename: 'bundled.js',
     path: path.resolve(__dirname, 'app'),
   };
-
-  // WEBPACK SERVER
   config.devServer = {
     before: function (app, server) {
       server._watch('./app/**/*.html');
@@ -72,12 +67,10 @@ if (currentTask == 'dev') {
     port: 3001,
     host: '0.0.0.0',
   };
+  config.mode = 'development';
 }
 
-/* ---------------------------- BUILD TASK ---------------------------------- */
 if (currentTask == 'build') {
-  config.mode = 'production';
-
   config.module.rules.push({
     test: /\.js$/,
     exclude: /(node_modules)/,
@@ -88,27 +81,20 @@ if (currentTask == 'build') {
       },
     },
   });
-  // [cssConfig.use] is an array so we can say dot unshift to add an item to the beginning of the array.
-  cssConfig.use.unshift(MiniCssExtractPlugin.loader);
 
+  cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   config.output = {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'docs'),
   };
-
+  config.mode = 'production';
   config.optimization = {
-    splitChunks: { chunks: 'all', minSize: 1000 },
+    splitChunks: { chunks: 'all' },
     minimize: true,
-    minimizer: ['...', new CssMinimizerPlugin()],
+    minimizer: [`...`, new CssMinimizerPlugin()],
   };
-  // Calling plugins
-  config.plugins.push(
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({ filename: 'styles.[chunkhash].css' }),
-    //  create our own Plugin for Webpack
-    new RunAfterCompile()
-  );
+  config.plugins.push(new CleanWebpackPlugin(), new MiniCssExtractPlugin({ filename: 'styles.[chunkhash].css' }), new RunAfterCompile());
 }
 
 module.exports = config;
