@@ -2,8 +2,8 @@
 @import 'normalize.css';
 
 /* BASE */
-@import 'base/_variables';
 @import 'base/_mixins';
+@import 'base/_variables';
 @import 'base/_global';
 
 /*UTILITIES / UTILITY KNIFE */
