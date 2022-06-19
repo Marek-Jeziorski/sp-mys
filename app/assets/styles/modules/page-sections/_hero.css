@@ -36,9 +36,4 @@
       display: block;
     }
   }
-
-  &__brand {
-    text-align: center;
-    padding-inline: 16px;
-  }
 }

@@ -1,5 +1,5 @@
 .main {
-  &__grid {
+  &__grider {
     display: grid;
     column-gap: 16px;
     grid-template-columns: 1fr;
@@ -22,8 +22,6 @@
   }
 
   &__area {
-    min-height: 50vh;
-    /* TODO: remove min-height when you will add actuall content */
     text-align: center;
 
     &--sidebar {
