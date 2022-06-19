@@ -6,10 +6,10 @@
     padding: 12px;
 
     @mixin atLarge {
-      padding: 0px;
       flex-flow: row wrap;
       column-gap: 16px;
       row-gap: 16px;
+      padding: 0px;
     }
   }
 
@@ -21,11 +21,11 @@
   }
 
   a {
-    color: white;
     display: block;
-    font-weight: 300;
     padding: 12px 0 12px 12px;
     background-color: rgba(0, 0, 255, 0.507);
+    color: var(--gray-100);
+    font-weight: var(--fw-300-light);
 
     @mixin atLarge {
       padding: 12px 0;

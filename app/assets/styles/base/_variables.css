@@ -1,28 +1,30 @@
 :root {
   /* FONT SIZES */
   --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+  --fs-900: 2rem;
   --fs-600: 1.5rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem;
   --fs-300: 0.75rem;
 
   @mixin atLarge {
+    --fs-900: 2rem;
     --fs-600: 1.5rem;
     --fs-500: 1.25rem;
-    --fs-400: 1rem;
+    --fs-400: 1.05rem;
     --fs-300: 0.75rem;
   }
 
   /* FONT WEIGHT */
-  --hairline: 100;
-  --thin: 200;
-  --light: 300;
-  --normal: 400;
-  --medium: 500;
-  --semibold: 600;
-  --bold: 700;
-  --extrabold: 800;
-  --black: 900;
+  --fw-100-hairline: 100;
+  --fw-200-thin: 200;
+  --fw-300-light: 300;
+  --fw-400-normal: 400;
+  --fw-500-medium: 500;
+  --fw-600-semibold: 600;
+  --fw-700-bold: 700;
+  --fw-800-extrabold: 800;
+  --fw-900-black: 900;
 
   /* HEADINGS - default CSS*/
   --h1: 32px; /* 2em */
@@ -44,14 +46,14 @@
   --gray-900: #212529;
 
   /* COLORS */
-  --blue: #0d6efd;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #020202;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #198754;
-  --teal: #20c997;
-  --cyan: #0dcaf0;
+  --co-blue: #0d6efd;
+  --co-indigo: #6610f2;
+  --co-purple: #6f42c1;
+  --co-pink: #020202;
+  --co-red: #dc3545;
+  --co-orange: #fd7e14;
+  --co-yellow: #ffc107;
+  --co-green: #198754;
+  --co-teal: #20c997;
+  --co-cyan: #0dcaf0;
 }
