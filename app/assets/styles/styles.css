@@ -5,6 +5,7 @@
 @import 'base/_mixins';
 @import 'base/_variables';
 @import 'base/_global';
+@import 'base/_typography';
 
 /*UTILITIES / UTILITY KNIFE */
 @import 'modules/_blocks';
