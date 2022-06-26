@@ -1,0 +1,15 @@
+.article {
+  display: flex;
+
+  &__date {
+    order: -1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    width: 181px;
+    font-size: var(--fs-600);
+    font-weight: var(--fw-700-bold);
+  }
+}

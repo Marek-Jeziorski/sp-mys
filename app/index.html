@@ -7,13 +7,13 @@
     <title>Szkoła Podstawowa w Mysłakowicach</title>
   </head>
   <body>
-    <header class="header section block--orange">
+    <header class="header section">
       <div class="header__nav-icon">
         <div class="header__nav-icon__middle"></div>
       </div>
       <div class="header__navbar">
         <div class="header__flexer container">
-          <div class="header__col-navigation block--yellow">
+          <div class="header__col-navigation">
             <nav class="main-nav">
               <ul>
                 <li><a href="#">Strona Startowa</a></li>
@@ -25,7 +25,7 @@
               </ul>
             </nav>
           </div>
-          <div class="header__col-buttons block--green">
+          <div class="header__col-buttons">
             <div class="btn-bar">
               <a class="btn" href="#">Login</a>
               <a class="btn btn--orange open-modal" href="#">Search</a>
@@ -35,9 +35,9 @@
       </div>
     </header>
 
-    <section class="hero section section--hero block--lime">
+    <section class="hero section section--hero">
       <div class="hero__flex container">
-        <div class="hero__col-brand block--yellow">
+        <div class="hero__col-brand">
           <div class="header__logo open-modal">
             <img src="assets\images\spm\logo@2x.png" />
           </div>
@@ -46,7 +46,7 @@
             <h2 class="brand__subtitle">w Mysłakowicach</h2>
           </div>
         </div>
-        <div class="hero__col-picture block--green">
+        <div class="hero__col-picture">
           <picture>
             <source srcset="assets\images\spm\hero\hero--large-1920-i.jpg 1920w, assets\images\spm\hero\hero--large@2-3840-i.jpg 3840w" media="(min-width: 1380px)" />
 
@@ -60,31 +60,52 @@
       </div>
     </section>
 
-    <main class="main section block--orange">
+    <main class="main section">
       <div class="main__grider container">
-        <div class="main__area main__area--sidebar block--yellow">
-          <h2>Sidebar</h2>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas fugiat veniam necessitatibus aliquam error ipsam, totam obcaecati accusantium sint?</p>
-            <p>Consequatur tempora neque eos hic maxime, quibusdam recusandae alias obcaecati excepturi quaerat earum nisi. Voluptates voluptatem ipsum quas explicabo error.</p>
-            <p>Accusamus, minus sapiente est impedit, voluptate itaque ab error aliquam, inventore voluptas qui aperiam similique eligendi perspiciatis omnis temporibus unde?</p>
+        <div class="main__area main__area--sidebar">
+          <div class="side-nav tile">
+            <h3>Na skróty</h3>
+            <ul>
+              <li><a href="">text</a></li>
+              <li><a href="">text</a></li>
+              <li><a href="">text</a></li>
+              <li><a href="">text</a></li>
+              <li><a href="">text</a></li>
+              <li><a href="">text</a></li>
+              <li><a href="">text</a></li>
+              <li><a href="">text</a></li>
+            </ul>
           </div>
         </div>
-        <div class="main__area main__area--articles block--red">
-          <h2>Articles</h2>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas fugiat veniam necessitatibus aliquam error ipsam, totam obcaecati accusantium sint?</p>
-            <p>Consequatur tempora neque eos hic maxime, quibusdam recusandae alias obcaecati excepturi quaerat earum nisi. Voluptates voluptatem ipsum quas explicabo error.</p>
-            <p>Accusamus, minus sapiente est impedit, voluptate itaque ab error aliquam, inventore voluptas qui aperiam similique eligendi perspiciatis omnis temporibus unde?</p>
-          </div>
+        <div class="main__area main__area--articles">
+          <article class="article tile">
+            <div class="article__body">
+              <h3>Article title</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quae mollitia, quidem consequatur perferendis eius magnam voluptates optio culpa tenetur libero! Tempora deleniti soluta sed!</p>
+            </div>
+            <div class="article__date">
+              <span>JUN</span>
+              <span>08</span>
+            </div>
+          </article>
+          <article class="article tile">
+            <div class="article__body">
+              <h3>Article title</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quae mollitia, quidem consequatur perferendis eius magnam voluptates optio culpa tenetur libero! Tempora deleniti soluta sed!</p>
+            </div>
+            <div class="article__date">
+              <span>JUN</span>
+              <span>08</span>
+            </div>
+          </article>
         </div>
-        <aside class="main__area main__area--widgets block--green">
-          <h2>Widgets</h2>
-          <h2>heading h2</h2>
-          <h3>heading h3</h3>
-          <h4>heading h4</h4>
-          <h5>heading h5</h5>
-          <h6>heading h6</h6>
+        <aside class="main__area main__area--widgets">
+          <div class="widget tile">
+            <h3>Gazetka Szkolna</h3>
+          </div>
+          <div class="widget tile">
+            <h3>Gazetka Szkolna</h3>
+          </div>
         </aside>
       </div>
     </main>
@@ -103,52 +124,29 @@
       <div class="footer__grid container">
         <div class="footer__col">
           <div class="footer__block">
-            <h3>Foter Column One</h3>
-            <ul>
-              <li><a href="#">Link First</a></li>
-              <li>
-                <a href="#">Link Second Very Important</a>
-              </li>
-              <li><a href="#">Link third</a></li>
-            </ul>
+            <h2>heading h2</h2>
+            <h3>heading h3</h3>
+            <h4>heading h4</h4>
+            <h5>heading h5</h5>
+            <h6>heading h6</h6>
           </div>
         </div>
         <div class="footer__col">
           <div class="footer__block">
-            <h3>Foter Column One</h3>
-            <ul>
-              <li><a href="#">Link First</a></li>
-              <li><a href="#">Link First</a></li>
-              <li><a href="#">Link First</a></li>
-              <li>
-                <a href="#">Link Second Very Important</a>
-              </li>
-              <li><a href="#">Link third</a></li>
-            </ul>
+            <h2>heading h2</h2>
+            <h3>heading h3</h3>
+            <h4>heading h4</h4>
+            <h5>heading h5</h5>
+            <h6>heading h6</h6>
           </div>
         </div>
         <div class="footer__col">
           <div class="footer__block">
-            <h3>Foter Column One</h3>
-            <ul>
-              <li><a href="#">Link First</a></li>
-              <li>
-                <a href="#">Link Second Very Important</a>
-              </li>
-              <li><a href="#">Link third</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__col">
-          <div class="footer__block">
-            <h3>Foter Column One</h3>
-            <ul>
-              <li><a href="#">Link First</a></li>
-              <li>
-                <a href="#">Link Second Very Important</a>
-              </li>
-              <li><a href="#">Link third</a></li>
-            </ul>
+            <h2>heading h2</h2>
+            <h3>heading h3</h3>
+            <h4>heading h4</h4>
+            <h5>heading h5</h5>
+            <h6>heading h6</h6>
           </div>
         </div>
       </div>

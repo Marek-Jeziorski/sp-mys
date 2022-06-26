@@ -7,13 +7,13 @@
   --fs-400: 1rem;
   --fs-300: 0.75rem;
 
-  @mixin atLarge {
+  /*   @mixin atLarge {
     --fs-900: 2rem;
     --fs-600: 1.5rem;
     --fs-500: 1.25rem;
     --fs-400: 1.05rem;
     --fs-300: 0.75rem;
-  }
+  } */
 
   /* FONT WEIGHT */
   --fw-100-hairline: 100;

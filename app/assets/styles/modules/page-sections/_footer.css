@@ -1,36 +1,36 @@
 .footer {
+  padding-bottom: 14rem;
+  &__grid {
+    display: grid;
+    gap: 16px;
 
-    &__grid {
-        display: grid;
-        gap: 16px;
-
-        @mixin atMedium {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        @mixin atLarge {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
+    @mixin atMedium {
+      grid-template-columns: 1fr 1fr;
     }
 
-    &__col {
-        border: 5px lime solid;
-        border-radius: 10%;
+    @mixin atLarge {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__col {
+    border: 5px lime solid;
+    border-radius: 10%;
+  }
+
+  &__block {
+    text-align: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      list-style: none;
     }
 
-    &__block {
-        text-align: center;
-
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            list-style: none;
-        }
-
-        a {
-            display: block;
-            padding: 8px 0px;
-        }
+    a {
+      display: block;
+      padding: 8px 0px;
     }
+  }
 }
