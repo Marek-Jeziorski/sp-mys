@@ -8,10 +8,12 @@
 @import 'base/_typography';
 
 /*UTILITIES / UTILITY KNIFE */
-@import 'modules/_blocks';
-@import 'modules/_container';
-@import 'modules/_reveal-item';
-@import 'modules/_tile';
+@import 'utilities/_blocks';
+@import 'utilities/_container';
+@import 'utilities/_reveal-item';
+@import 'utilities/_tile';
+@import 'utilities/_placeholder';
+@import 'utilities/_generic-content';
 
 /* COMPONENTS */
 @import 'modules/_btn-bar';
@@ -19,10 +21,10 @@
 @import 'modules/_main-nav';
 @import 'modules/_side-nav';
 @import 'modules/_brand';
-@import 'modules/_generic-content';
 @import 'modules/_social-icons';
 @import 'modules/_section-title';
 @import 'modules/_article';
+@import 'modules/_widget';
 
 /* PAGE SECTIONS */
 @import 'modules/page-sections/_page-sections';

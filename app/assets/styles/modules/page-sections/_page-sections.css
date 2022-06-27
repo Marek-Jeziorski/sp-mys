@@ -3,7 +3,7 @@
 
   &--hero {
     @mixin atLarge {
-      padding-top: 77px;
+      padding-top: 60px;
     }
   }
 

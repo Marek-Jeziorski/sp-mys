@@ -40,6 +40,11 @@ h6 {
   margin: 0;
 }
 
+h3 {
+  font-weight: var(--fw-600-semibold);
+  margin-bottom: 1rem;
+}
+
 a {
   text-decoration: none;
 }
