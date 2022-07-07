@@ -13,6 +13,7 @@
 @import 'utilities/_reveal-item';
 @import 'utilities/_tile';
 @import 'utilities/_generic-content';
+@import 'utilities/_mask';
 
 /* COMPONENTS */
 @import 'modules/_btn-bar';

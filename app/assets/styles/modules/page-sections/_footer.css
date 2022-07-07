@@ -1,5 +1,4 @@
 .footer {
-  padding-bottom: 14rem;
   &__grid {
     display: grid;
     gap: 16px;
