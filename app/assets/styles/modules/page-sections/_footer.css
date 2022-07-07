@@ -13,11 +13,6 @@
     }
   }
 
-  &__col {
-    border: 5px lime solid;
-    border-radius: 10%;
-  }
-
   &__block {
     text-align: center;
 
