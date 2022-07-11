@@ -23,12 +23,15 @@
   a {
     display: block;
     padding: 12px 0 12px 12px;
-    background-color: rgba(0, 0, 255, 0.507);
+    /*  TODO:  background-color: rgba(0, 0, 255, 0.507); */
     color: var(--gray-100);
+    background-color: var(--gray-700);
     font-weight: var(--fw-300-light);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.575);  TODO: */
 
     @mixin atLarge {
       padding: 12px 0;
+      background-color: transparent;
     }
   }
 }

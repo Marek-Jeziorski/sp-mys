@@ -7,14 +7,16 @@
 
   @mixin atLarge {
     position: fixed;
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: var(--gray-600);
+
     &--dark {
-      background-color: rgba(0, 0, 255, 0.8);
+      background-color: var(--gray-700);
     }
   }
 
   &--is-expanded {
-    background-color: rgba(0, 0, 255, 0.507);
+    /* TODO: background-color: rgba(0, 0, 255, 0.507); */
+    background-color: var(--gray-600);
   }
 
   &__nav-icon {

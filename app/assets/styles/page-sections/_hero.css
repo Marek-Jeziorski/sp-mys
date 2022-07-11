@@ -1,5 +1,5 @@
 .hero {
-  &__flex {
+  &__flexer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,10 +31,16 @@
 
   &__col-picture {
     flex: 1;
-    position: relative;
 
     img {
       display: block;
     }
+  }
+
+  /* --------- END MAIN LAYOUT ---------- TODO: */
+
+  &__logo {
+    border-radius: 50%;
+    overflow: hidden;
   }
 }

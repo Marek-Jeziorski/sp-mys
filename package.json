@@ -1,5 +1,5 @@
 {
-  "name": "travel-site",
+  "name": "sp-myslakowice.pl",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack serve",

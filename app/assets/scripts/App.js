@@ -7,6 +7,7 @@ import StickyHeader from './modules/StickyHeader';
 
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll('.programs__img'), 75);
+/* new RevealOnScroll(document.querySelectorAll('.footer__col'), 66); */
 new MobileMenu();
 
 /* ---MODAL--- */

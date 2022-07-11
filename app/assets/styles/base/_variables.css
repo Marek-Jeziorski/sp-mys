@@ -1,6 +1,6 @@
 :root {
   /* FONT SIZES */
-  --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 6rem);
   --fs-900: 2rem;
   --fs-600: 1.5rem;
   --fs-500: 1.25rem;

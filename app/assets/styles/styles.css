@@ -13,7 +13,6 @@
 @import 'utilities/_reveal-item';
 @import 'utilities/_tile';
 @import 'utilities/_generic-content';
-@import 'utilities/_mask';
 
 /* COMPONENTS */
 @import 'modules/_btn-bar';
@@ -27,12 +26,12 @@
 @import 'modules/_widget';
 
 /* PAGE SECTIONS */
-@import 'modules/page-sections/_page-sections';
-@import 'modules/page-sections/_header';
-@import 'modules/page-sections/_hero';
-@import 'modules/page-sections/_main';
-@import 'modules/page-sections/_programs';
-@import 'modules/page-sections/_footer';
+@import 'page-sections/_page-sections';
+@import 'page-sections/_header';
+@import 'page-sections/_hero';
+@import 'page-sections/_main';
+@import 'page-sections/_programs';
+@import 'page-sections/_footer';
 
 /*  MODALS */
 
