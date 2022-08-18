@@ -1,15 +1,29 @@
 .article {
   display: flex;
 
+  &__body {
+    flex: 6;
+  }
   &__date {
-    order: -1;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 16px;
-    width: 181px;
-    font-size: var(--fs-600);
-    font-weight: var(--fw-700-bold);
+    display: none;
+
+    @mixin atSmall {
+      order: -1;
+      flex: 1;
+      display: flex;
+      align-self: center;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 8px;
+      max-width: 81px;
+      height: 81px;
+
+      border-radius: 50%;
+      background-color: var(--gray-600);
+      color: var(--gray-200);
+      font-size: var(--fs-600);
+      font-weight: var(--fw-700-bold);
+    }
   }
 }
